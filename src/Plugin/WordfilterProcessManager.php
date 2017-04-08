@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains Drupal\wordfilter\Plugin\WordfilterProcessManager.
- */
-
 namespace Drupal\wordfilter\Plugin;
 
 use Drupal\Core\Plugin\DefaultPluginManager;

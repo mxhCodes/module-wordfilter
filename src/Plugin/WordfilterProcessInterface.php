@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains Drupal\wordfilter\Plugin\WordfilterProcessInterface.
- */
-
 namespace Drupal\wordfilter\Plugin;
 
 use \Drupal\Core\Language\LanguageInterface;

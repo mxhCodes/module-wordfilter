@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains Drupal\wordfilter\Plugin\WordfilterProcessBase.
- */
-
 namespace Drupal\wordfilter\Plugin;
 
 use \Drupal\Core\Form\FormStateInterface;

@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains Drupal\wordfilter\Annotation\WordfilterProcess.
- */
-
 namespace Drupal\wordfilter\Annotation;
 
 use Drupal\Component\Annotation\Plugin;
