@@ -5,6 +5,7 @@
  * Contains wordfilter.module..
  */
 
+use Drupal\Core\Link;
 use \Drupal\Core\Url;
 use \Drupal\Core\Routing\RouteMatchInterface;
 use \Drupal\Core\Form\FormStateInterface;
@@ -214,13 +215,13 @@ function wordfilter_preprocess_comment(&$variables) {
   }
   
   if (isset($comment->in_preview)) {
-    $variables['title'] = \Drupal::l($text, new Url('<front>'));
+    $variables['title'] = Link::fromTextAndUrl($text, new Url('<front>'));
   }
   else {
     $uri = $comment->permalink();
     $attributes = $uri->getOption('attributes') ?: [];
     $attributes += ['class' => ['permalink'], 'rel' => 'bookmark'];
     $uri->setOption('attributes', $attributes);
-    $variables['title'] = \Drupal::l($text, $uri);
+    $variables['title'] = Link::fromTextAndUrl($text, $uri);
   }
 }

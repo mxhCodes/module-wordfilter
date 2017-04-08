@@ -335,7 +335,7 @@ class WordfilterConfigurationForm extends EntityForm {
           '%label' => $wordfilter_configuration->label(),
         ]));
     }
-    $form_state->setRedirectUrl($wordfilter_configuration->urlInfo('collection'));
+    $form_state->setRedirectUrl($wordfilter_configuration->toUrl('collection'));
   }
 
 }
